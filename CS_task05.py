@@ -1,5 +1,4 @@
 from scapy.all import sniff, IP, TCP, UDP
-
 def packet_callback(packet):
     if IP in packet:
         ip_src = packet[IP].src
